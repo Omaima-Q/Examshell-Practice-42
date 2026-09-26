@@ -1,0 +1,5 @@
+.DS_Store
+.vscode/
+rendu/vect2/vect2
+*.o
+a.out

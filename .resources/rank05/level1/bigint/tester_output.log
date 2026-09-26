@@ -1,0 +1,1329 @@
+[0;34m🔍 Running COMPREHENSIVE TESTING for bigint[0m
+==========================================
+
+[0;34m📦 Compiling reference solution...[0m
+[0;32m✅ Reference compilation successful![0m
+
+[0;34m📦 Compiling user solution...[0m
+In file included from user_main.cpp:2:
+./user_bigint.hpp:1:2: error: unterminated conditional directive
+    1 | #ifndef BIGINT
+      |  ^
+./user_bigint.hpp:29:2: error: expected ';' after class
+   29 | }
+      |  ^
+      |  ;
+user_main.cpp:10:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'const bigint')
+   10 |         std::cout << "a = " << a << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'const bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'const uniform_int_distribution<_IT>' against 'const bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'const basic_string<_CharT, _Traits, _Allocator>' against 'const bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'const shared_ptr<_Yp>' against 'const bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'const unique_ptr<_Yp, _Dp>' against 'const bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'const bitset<_Size>' against 'const bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'const bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'const bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'const bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'const bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'const bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'const bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'const bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'const bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'const bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'const bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'const bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'const bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'const bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:11:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   11 |         std::cout << "b = " << b << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:12:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   12 |         std::cout << "c = " << c << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:13:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   13 |         std::cout << "d = " << d << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:14:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   14 |         std::cout << "e = " << e << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:16:26: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   16 |         std::cout << "a + b = " << a + b << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:17:26: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   17 |         std::cout << "a + c = " << a + c << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:18:35: error: no viable overloaded '+='
+   18 |         std::cout << "(c += a) = " << (c += a) << std::endl;
+      |                                        ~ ^  ~
+user_main.cpp:20:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   20 |         std::cout << "b = " << b << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:21:24: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   21 |         std::cout << "++b = " << ++b << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:22:24: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   22 |         std::cout << "b++ = " << b++ << std::endl;
+      |         ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:25:42: error: invalid operands to binary expression ('bigint' and 'int')
+   25 |         std::cout << "(b << 10) + 42 = " << ((b << 10) + 42) << std::endl;
+      |                                               ~ ^  ~~
+user_main.cpp:26:36: error: no viable overloaded '<<='
+   26 |         std::cout << "(d <<= 4) = " << (d <<= 4) << ", d: " << d << std::endl;
+      |                                         ~ ^   ~
+user_main.cpp:27:36: error: no viable overloaded '>>='
+   27 |         std::cout << "(d >>= 2) = " << (d >>= (const bigint)2) << ", d: " << d << std::endl;
+      |                                         ~ ^   ~~~~~~~~~~~~~~~
+user_main.cpp:29:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'const bigint')
+   29 |         std::cout << "a = " << a << std::endl; // a = 42
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'const bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'const bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'const bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'const uniform_int_distribution<_IT>' against 'const bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'const basic_string<_CharT, _Traits, _Allocator>' against 'const bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'const shared_ptr<_Yp>' against 'const bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'const unique_ptr<_Yp, _Dp>' against 'const bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'const bitset<_Size>' against 'const bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'const bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'const bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'const bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'const bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'const bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'const bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'const bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'const bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'const bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'const bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'const bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'const bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'const bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'const bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:30:22: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'bigint')
+   30 |         std::cout << "d = " << d << std::endl; // d = 5348
+      |         ~~~~~~~~~~~~~~~~~~~ ^  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:349:55: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  349 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:376:53: note: candidate function template not viable: no known conversion from 'bigint' to 'char' for 2nd argument
+  376 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:381:53: note: candidate function template not viable: no known conversion from 'bigint' to 'signed char' for 2nd argument
+  381 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:386:53: note: candidate function template not viable: no known conversion from 'bigint' to 'unsigned char' for 2nd argument
+  386 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:398:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  398 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:437:53: note: candidate function template not viable: no known conversion from 'bigint' to 'const char *' for 2nd argument
+  437 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:443:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const signed char *' for 2nd argument
+  443 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:450:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const unsigned char *' for 2nd argument
+  450 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:588:1: note: candidate function template not viable: no known conversion from 'bigint' to 'const error_code' for 2nd argument
+  588 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:344:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'bigint')
+  344 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution<_IT>' against 'bigint'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:392:1: note: candidate template ignored: could not match 'const _CharT *' against 'bigint'
+  392 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:569:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = basic_ostream<char, std::char_traits<char> > &, _Tp = bigint]
+  569 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:576:1: note: candidate template ignored: could not match 'basic_string<_CharT, _Traits, _Allocator>' against 'bigint'
+  576 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:582:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'bigint'
+  582 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:594:1: note: candidate template ignored: could not match 'shared_ptr<_Yp>' against 'bigint'
+  594 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:608:1: note: candidate template ignored: could not match 'unique_ptr<_Yp, _Dp>' against 'bigint'
+  608 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:614:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'bigint'
+  614 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:79:59: note: candidate function not viable: no known conversion from 'bigint' to 'ostream &(*)(ostream &)' for 1st argument
+   79 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:84:3: note: candidate function not viable: no known conversion from 'bigint' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+   84 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:89:59: note: candidate function not viable: no known conversion from 'bigint' to 'ios_base &(*)(ios_base &)' for 1st argument
+   89 |   inline _LIBCPP_HIDE_FROM_ABI_SINCE_LLVM8 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                           ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:143:18: note: candidate function not viable: no known conversion from 'bigint' to 'bool' for 1st argument
+  143 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:144:18: note: candidate function not viable: no known conversion from 'bigint' to 'short' for 1st argument
+  144 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:145:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned short' for 1st argument
+  145 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:146:18: note: candidate function not viable: no known conversion from 'bigint' to 'int' for 1st argument
+  146 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:147:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned int' for 1st argument
+  147 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:148:18: note: candidate function not viable: no known conversion from 'bigint' to 'long' for 1st argument
+  148 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:149:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long' for 1st argument
+  149 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:150:18: note: candidate function not viable: no known conversion from 'bigint' to 'long long' for 1st argument
+  150 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:151:18: note: candidate function not viable: no known conversion from 'bigint' to 'unsigned long long' for 1st argument
+  151 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:152:18: note: candidate function not viable: no known conversion from 'bigint' to 'float' for 1st argument
+  152 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:153:18: note: candidate function not viable: no known conversion from 'bigint' to 'double' for 1st argument
+  153 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:154:18: note: candidate function not viable: no known conversion from 'bigint' to 'long double' for 1st argument
+  154 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:155:18: note: candidate function not viable: no known conversion from 'bigint' to 'const void *' for 1st argument; take the address of the argument with &
+  155 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:163:18: note: candidate function not viable: no known conversion from 'bigint' to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  163 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+user_main.cpp:32:34: error: invalid operands to binary expression ('bigint' and 'const bigint')
+   32 |         std::cout << "(d < a) = " << (d < a) << std::endl; // (d < a) = 0
+      |                                       ~ ^ ~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+[0;31m❌ User compilation failed![0m
